@@ -5,7 +5,7 @@
 # This code is part of the Fatiando a Terra project (https://www.fatiando.org)
 #
 # Import functions/classes to make the public API
-from . import dipole, point, prism
+from . import dipole, point, prism, polygon
 from ._version import __version__
 
 # Append a leading "v" to the generated version by setuptools_scm
