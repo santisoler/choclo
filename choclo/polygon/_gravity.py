@@ -20,7 +20,8 @@ def gravity_u(x: float, upward: float, polygon: np.ndarray, density: float):
         Must be in meters.
     polygon : (n_vertices, 2) np.ndarray
         Array containing the coordinates horizontal and upward coordinates of
-        the polygon vertices. Must be in meters.
+        the polygon vertices. Vertices should be provided in clockwise order.
+        Their coordinates must be in meters.
     density : float
         Density of the polygon in kilograms per cubic meter.
 
