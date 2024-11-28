@@ -107,4 +107,5 @@ def gravity_u(x: float, upward: float, polygon: np.ndarray, density: float):
         result += (
             a_i * np.sin(phi_i) * np.cos(phi_i) * (theta_i - theta_ii + tan_phi_i * log)
         )
-    return 2 * GRAVITATIONAL_CONST * density * result
+    # Use a minus to invert the sign of the result (return the upward component)
+    return -2 * GRAVITATIONAL_CONST * density * result
