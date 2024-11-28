@@ -86,7 +86,6 @@ def gravity_u(x: float, upward: float, polygon: np.ndarray, density: float):
             continue
         if xii == 0.0:
             tan_theta_i = zi / xi
-            breakpoint()
             result += (
                 a_i
                 * np.sin(phi_i)
